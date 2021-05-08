@@ -22,7 +22,7 @@ int main()
 	filename2[strlen(filename2)-1]='\0';
         
 	printf("请设置整数offset为：\n");                   //设置offset值
-        scanf("%x",&offset);
+        scanf("%d",&offset);
 
         fd1=open(filename1,O_RDWR,S_IRWXU);
         fd2=open(filename2,O_RDWR,S_IRWXU);
